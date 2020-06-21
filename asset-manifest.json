@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/PixelPerfectFylo/static/css/main.956c173e.chunk.css",
+    "main.js": "/PixelPerfectFylo/static/js/main.bf57296e.chunk.js",
+    "main.js.map": "/PixelPerfectFylo/static/js/main.bf57296e.chunk.js.map",
+    "runtime-main.js": "/PixelPerfectFylo/static/js/runtime-main.21dfeb05.js",
+    "runtime-main.js.map": "/PixelPerfectFylo/static/js/runtime-main.21dfeb05.js.map",
+    "static/js/2.71c4245c.chunk.js": "/PixelPerfectFylo/static/js/2.71c4245c.chunk.js",
+    "static/js/2.71c4245c.chunk.js.map": "/PixelPerfectFylo/static/js/2.71c4245c.chunk.js.map",
+    "index.html": "/PixelPerfectFylo/index.html",
+    "precache-manifest.4a997843617a09ffe9934489bef660e1.js": "/PixelPerfectFylo/precache-manifest.4a997843617a09ffe9934489bef660e1.js",
+    "service-worker.js": "/PixelPerfectFylo/service-worker.js",
+    "static/css/main.956c173e.chunk.css.map": "/PixelPerfectFylo/static/css/main.956c173e.chunk.css.map",
+    "static/js/2.71c4245c.chunk.js.LICENSE.txt": "/PixelPerfectFylo/static/js/2.71c4245c.chunk.js.LICENSE.txt",
+    "static/media/global.scss": "/PixelPerfectFylo/static/media/security.4e1d297b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.21dfeb05.js",
+    "static/js/2.71c4245c.chunk.js",
+    "static/css/main.956c173e.chunk.css",
+    "static/js/main.bf57296e.chunk.js"
+  ]
+}

@@ -17,6 +17,8 @@
 @import "cmps/sec1.scss";
 @import "cmps/sec2.scss";
 @import "cmps/sec3.scss";
+@import "cmps/sec4.scss";
+@import "cmps/sec5.scss";
 @import "cmps/footer.scss";
 
 // Pages
@@ -26,6 +28,5 @@
 .app-container {
     width: 100%;
     min-height: 100vh;
-    background-color: $clr1;
-    color: $clr6;
 }
+

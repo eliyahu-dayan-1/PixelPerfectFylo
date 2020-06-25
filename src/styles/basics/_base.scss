@@ -3,41 +3,15 @@
 }
 
 html {
-    // font-family: "Open Sans", sans-serif;
-    // color: $clr2;
-    line-height: normal; /* ? */
+    line-height: normal;
 }
 
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
-
-    /* width */
-    ::-webkit-scrollbar,
-    &::-webkit-scrollbar {
-        width: 3px;
-        height: 5px;
-    }
-
-    /* Track */
-    ::-webkit-scrollbar-track,
-    &::-webkit-scrollbar-track {
-        background: transparent;
-    }
-
-    /* Handle */
-    ::-webkit-scrollbar-thumb,
-    &::-webkit-scrollbar-thumb {
-        background: #888;
-    }
-
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover,
-    &::-webkit-scrollbar-thumb:hover {
-        background: #777;
-    }
+    background-color: $clr5;
+    color: $clr6;
+    font-family: $fnt-os-4;
 }
 
 h1,
@@ -46,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-    // font-family: 'Open Sans', sans-serif;
+    // font-family: 'Open-Sans-4', sans-serif;
     font-weight: 500;
     line-height: 1.2em;
     margin: 0;
@@ -62,4 +36,10 @@ button {
 
 input {
     outline: none;
+}
+
+ul, li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }

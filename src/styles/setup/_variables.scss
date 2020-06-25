@@ -1,15 +1,24 @@
 // Colors
 $clr1: #1b2330;
-// $clr2: #57606f;
+$clr2: #202a3c;
 $clr3: #62e0d9;
-// $clr4: #d9dbdf;
-// $clr5: #f6f7fb;
+$clr4: #0b1524;
+$clr5: #181f2b;
 $clr6: #ffffff;
 
 // Breakpoints
-$mobile-breakpoint: 460px;
-$w-mobile-breakpoint: 610px;
+$mobile-breakpoint: 370px;
+$w-mobile-breakpoint: 660px;
 $w2-mobile-breakpoint: 750px;
-$narrow-breakpoint: 820px;
+$narrow-breakpoint: 880px;
+$w2-normal-breakpoint: 930px;
 $normal-breakpoint: 1040px;
-$desktop-breakpoint: 1400px;
+$desktop-breakpoint: 1280px;
+
+
+//font
+
+$fnt-realway-r: 'Raleway-R';
+$fnt-realway-7: 'Raleway-7';
+$fnt-os-7: 'Open-Sans-7';
+$fnt-os-4: 'Open-Sans-4';

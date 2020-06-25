@@ -2,7 +2,7 @@ import React from 'react'
 
 export function Sec2() {
     return (
-        <section className="sec2 flex column" >
+        <section className="sec2 flex wrap" >
 
             <div className="desc">
                 <div className="icon desktop-mobile-icon"></div>

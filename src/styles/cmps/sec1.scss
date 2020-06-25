@@ -1,12 +1,14 @@
 .sec1 {
-    padding: 0 360px;
     padding-bottom: 195px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+    position: relative;
+    background-color: $clr1;
+
     > * {
+        z-index: 2;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -18,26 +20,81 @@
     }
 
     .pepolewithfile-icon {
-        width: 720px;
+        max-width: 720px;
+        margin-left: 16px;
+        margin-right: 10px;
+        @include for-narrow-layout {
+            width: 100%;
+        }
     }
 
     .header {
-        font-family: "Raleway";
+        font-family: $fnt-realway-7;
         font-size: 40px;
-        font-weight: 700;
+        max-width: 735px;
+        line-height: 60px;
+        margin-bottom: 19px;
     }
     .txt {
-        font-family: "Open-Sans-Regular";
+        font-family: $fnt-os-4;
         font-size: 20px;
-        font-weight: 400;
         padding: 0 66px;
+        max-width: 590px;
+        line-height: 30px;
     }
-    .button {
-        padding: 0 220px;
-        width: 280px;
+
+    button {
+        background: 0;
+        border: 0;
+        font-family: $fnt-realway-7;
+        font-size: 16px;
         height: 56px;
-        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+        width: 285px;
         border-radius: 28px;
+        color: inherit;
         background-image: linear-gradient(152deg, #63e1d9 0%, #34a0cd 100%);
+    }
+
+    .bg-layout {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        bottom: 0px;
+        content: url(../../images/bg-curvy-desktop.svg);
+    }
+}
+
+.sec1 {
+    @include for-narrow-layout {
+        padding-bottom: 130px;
+        padding-top: 25px;
+        background: linear-gradient(to bottom, $clr1 70%, $clr5 0%);
+
+        .header {
+            font-family: $fnt-realway-7;
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        .bg-layout {
+            content: url(../../images/bg-curvy-mobile.svg);
+            bottom: 30%;
+        }
+
+        .pepolewithfile-icon {
+            width: 100%;
+        }
+
+        .txt {
+            font-size: 14px;
+            padding: 0 12px;
+            line-height: 21px;
+        }
+
+        button {
+            font-size: 14px;
+            width: 240px;
+            height: 48px;
+        }
     }
 }

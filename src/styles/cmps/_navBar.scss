@@ -1,21 +1,32 @@
 .nav-content-wrapper {
-    margin: 0 80px;
+    background-color: $clr1;
 
     .logo {
-        
+        width: 175px;;
+        margin-right: 85px;
+        margin: 75px 0px;
     }
 
     .links {
+        font-family: $fnt-realway-r;
+        font-size: 16px;
+        width: 270px;;
+        
         > * {
-            padding-top: 90px;
-            padding-bottom: 75px;
+            align-self: center;
+            color: $clr6;
         }
-        > *:not(last-child) {
-            padding-right: 24px;
-        }
+    }
+}
 
-        > *:not(first-child) {
-            padding-left: 24px;
+.nav-content-wrapper {
+    @include for-narrow-layout {
+        .logo {
+            width: 80px;
+            margin: 25px 85px 25px 0px;
+        }
+        .links {
+            font-size: 12px;
         }
     }
 }

@@ -6,9 +6,9 @@ import { connect } from 'react-redux'
 class NavBar extends Component {
     render() {
         return (
-            <header className="nav-content-wrapper flex space-between">
+            <header className="nav-content-wrapper full flex space-between ">
                 <div className="logo align-center"></div>
-                <nav className="links flex">
+                <nav className="links flex space-between">
                    <a href="">Sign In</a> 
                    <a href="">Team</a> 
                    <a href="">Features</a> 

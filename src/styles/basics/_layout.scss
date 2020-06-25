@@ -1,49 +1,58 @@
-/* .main-container {
-
+.app-container {
+    width: 100vw;
+    min-height: 100vh;
     display: grid;
-
-    grid-template-columns: 20px 1fr 20px;
-
-    @include for-narrow-layout {
-        grid-template-columns: 
-        minmax(20px, 1fr)
-        minmax(auto, $mobile-breakpoint)
-        minmax(20px, 1fr)
-    }
-    
-    @include for-narrow-layout {
-        grid-template-columns: 
-        minmax(20px, 1fr)
-        minmax(auto, $mobile-breakpoint)
-        minmax(20px, 1fr)     
-    }
-
-    @include for-normal-layout {
-        grid-template-columns: 
-        minmax(20px, 1fr)
-        minmax(auto, $narrow-breakpoint)
-        minmax(20px, 1fr)
-        ;
-    }
-
-    @include for-wide-layout {
-        grid-template-columns: 
-        minmax(20px, 1fr)
-        minmax(auto, $normal-breakpoint)
-        minmax(20px, 1fr)
-        ;
-    }
+    grid-template-columns: minmax(80px, 1fr) minmax(0, 1280px) minmax(80px, 1fr);
 
     > * {
         grid-column: 2;
         &.full {
             grid-column: 1 / -1;
+            padding-right: 80px;
+            padding-left: 80px;
         }
     }
-
-
+    
+    @include for-narrow-layout {
+        grid-template-columns: minmax(20px, 1fr) minmax(0, 1280px) minmax(20px, 1fr);
+        > * {
+            &.full {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+        }
+    }
 }
- */
+
+// @include for-narrow-layout {
+//     grid-template-columns:
+//     minmax(20px, 1fr)
+//     minmax(auto, $mobile-breakpoint)
+//     minmax(20px, 1fr)
+// }
+
+// @include for-narrow-layout {
+//     grid-template-columns:
+//     minmax(20px, 1fr)
+//     minmax(auto, $mobile-breakpoint)
+//     minmax(20px, 1fr)
+// }
+
+// @include for-normal-layout {
+//     grid-template-columns:
+//     minmax(20px, 1fr)
+//     minmax(auto, $narrow-breakpoint)
+//     minmax(20px, 1fr)
+//     ;
+// }
+
+// @include for-wide-layout {
+//     grid-template-columns:
+//     minmax(20px, 1fr)
+//     minmax(auto, $normal-breakpoint)
+//     minmax(20px, 1fr)
+//     ;
+// }
 
 /* .card-grid {
     display: grid;
@@ -51,12 +60,12 @@
     gap: 16px;
 } */
 
-.app-main-container {
-    width: 100vw;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    @include for-w-mobile-layout {
-        overflow-y: hidden;
-    }
-}
+// .app-main-container {
+//     width: 100vw;
+//     height: 100%;
+//     margin: 0;
+//     padding: 0;
+//     @include for-w-mobile-layout {
+//         overflow-y: hidden;
+//     }
+// }

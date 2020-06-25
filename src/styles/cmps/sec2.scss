@@ -1,12 +1,18 @@
 .sec2 {
-    margin: 0 280px 137px 280px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 149px;
-    row-gap: 79px;
+    margin: 0 0 137px 0;
+    grid-template-columns: repeat(2, auto);
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    > *:nth-child(odd) {
+        margin-right: 147px;
+    }
+
+    > *:nth-child(1),
+    > *:nth-child(2) {
+        margin-bottom: 79px;
+    }
 
     .desc {
         display: flex;
@@ -17,21 +23,48 @@
     }
 
     .icon {
-        width: 104px;
+        max-width: 104px;
+        margin-bottom: 16px;
     }
 
     .header {
-        font-family: Raleway;
+        font-family: $fnt-realway-7;
         font-size: 20px;
-        font-weight: 700;
+        margin-bottom: 8px;
     }
 
     .txt {
-        width: 349px;
+        max-width: 349px;
         height: 62px;
         color: #ffffff;
-        font-family: "Open Sans";
+        font-family: $fnt-os-4;
         font-size: 14px;
-        font-weight: 400;
+        line-height: 21px;
+    }
+}
+
+.sec2 {
+    @include for-normal-layout {
+        margin: 0 0 161px 0;
+        flex-direction: column;
+
+        > * {
+            margin: 0;
+        }
+
+        .desc:not(last-child) {
+            margin-right: 0 !important;
+            margin-bottom: 79px;
+        }
+    }
+    @include for-narrow-layout{
+        .icon {
+            max-width: 80px;
+            margin-bottom: 24px;
+        }
+
+        .header {
+            font-size: 18px;
+        }
     }
 }
